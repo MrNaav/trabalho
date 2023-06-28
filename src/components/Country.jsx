@@ -8,10 +8,10 @@ const Country = ({img}) => {
     const {name} = useParams()
 
     const [flagData, setFlagData] = useState ([])
-    const fetchFlagData = useCallback (async (paramOffset) =>{
+    const fetchFlagData = useCallback (async () =>{
         console.log('teste')
         try {
-            const{data} = await axios.get(`https://restcountries.com/v3.1/name/${name}?fullText=true`)
+            const{data} = await axios.get(`https://restcountries.com/v3.1/name/${name}`)
             setFlagData(data)
             console.log(data)
         }catch(error){
@@ -32,9 +32,9 @@ const Country = ({img}) => {
 
     const renderFlagData = () => {
     return (
-        <div className='containerr'>
+        <div className='container2'>
             {flagData.map(flag =>(
-                <div className="containerr">
+                <div className="container2">
                     <h3>Nome: {name}</h3>
                     <img src={img}/>
                     {flag.capital?<h3>Capital: {flag.capital[0]}</h3>:""}
