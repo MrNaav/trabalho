@@ -1,0 +1,12 @@
+.country-item {
+  width: 200px;
+}
+
+.country-item img {
+  width: 100%;
+  height: 8em;
+}
+
+.country-item-name {
+  color: #ccc;
+}
