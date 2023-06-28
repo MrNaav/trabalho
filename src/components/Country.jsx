@@ -32,9 +32,9 @@ const Country = ({img}) => {
 
     const renderFlagData = () => {
     return (
-        <div className='container'>
+        <div className='containerr'>
             {flagData.map(flag =>(
-                <div className="container">
+                <div className="containerr">
                     <h3>Nome: {name}</h3>
                     <img src={img}/>
                     {flag.capital?<h3>Capital: {flag.capital[0]}</h3>:""}
