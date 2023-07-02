@@ -6,12 +6,12 @@ import CountryItem from "../components/CountryItem";
 
 const Pagination = ({ request, offset }) => {
   const nextpage = () => {
-    request(offset + 12);
+    request(offset + 10);
   };
 
   const previousPage = () => {
-    if (offset <= 12) return;
-    request(offset - 12);
+    if (offset <= 10) return;
+    request(offset - 10);
   };
 
   return (
@@ -28,7 +28,7 @@ const Pagination = ({ request, offset }) => {
 
 const Home = () => {
   const [flagData, setFlagData] = useState([]);
-  const [offset, setOffset] = useState(12);
+  const [offset, setOffset] = useState(10);
   const fetchFlag = useCallback(async (paramOffset) => {
     console.log("teste");
     try {

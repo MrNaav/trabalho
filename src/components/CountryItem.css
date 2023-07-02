@@ -8,5 +8,5 @@
 }
 
 .country-item-name {
-  color: #ccc;
+  color: rgb(255, 255, 255); /* Nome países */
 }

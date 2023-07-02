@@ -2,12 +2,12 @@
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    border: 1px solid #333333; /* Cinza escuro */
+    border: 1px solid #0016a5dd; /* Linha */
   }
 
   body {
-    background-color: #121212; /* Preto escuro */
-    color: #ffffff; /* Branco */
+    background-color: hsl(212, 100%, 61%); /* Fundo Site */
+    color: #ffffff; /* Letras */
     font-family: Arial, sans-serif;
   }
   
